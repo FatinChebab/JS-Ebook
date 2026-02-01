@@ -4,88 +4,85 @@
 <meta charset="UTF-8">
 <title>20 Exercices JavaScript Corrigés</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap" rel="stylesheet">
 <style>
-body {
+body{
   margin:0;
-  font-family:Poppins, sans-serif;
-  background:#0f172a;
-  color:#fff;
+  font-family:Inter, sans-serif;
+  background:#f8fafc;
+  color:#1e293b;
 }
-.hero {
-  display:flex;
-  flex-wrap:wrap;
-  align-items:center;
-  justify-content:center;
-  padding:60px 20px;
-  background:linear-gradient(135deg,#1e3a8a,#f59e0b);
+header{
+  background:linear-gradient(135deg,#2563eb,#facc15);
+  padding:70px 20px;
+  text-align:center;
+  color:white;
 }
-.hero img {
-  max-width:300px;
-  border-radius:15px;
-  box-shadow:0 20px 40px rgba(0,0,0,.5);
-  margin:20px;
+header img{
+  max-width:220px;
+  border-radius:18px;
+  box-shadow:0 20px 40px rgba(0,0,0,.25);
 }
-.hero .text {
-  max-width:500px;
-}
-.hero h1 {font-size:2.5rem;}
-.btn {
-  background:#22c55e;
-  color:#000;
-  padding:15px 25px;
+header h1{margin:20px 0 10px;}
+header p{font-size:1.1rem;}
+.btn{
+  background:white;
+  color:#2563eb;
+  padding:14px 28px;
   border-radius:30px;
   text-decoration:none;
   font-weight:600;
   display:inline-block;
-  margin-top:15px;
+  margin-top:20px;
 }
-section {
+section{
   max-width:900px;
   margin:auto;
-  padding:50px 20px;
+  padding:60px 20px;
 }
-.cards {
+h2{text-align:center;margin-bottom:30px;}
+.cards{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
   gap:20px;
 }
-.card {
-  background:#020617;
-  padding:20px;
-  border-radius:12px;
+.card{
+  background:white;
+  border-radius:14px;
+  padding:25px;
+  box-shadow:0 10px 20px rgba(0,0,0,.05);
   text-align:center;
 }
-.price {
+.price{
   font-size:2.5rem;
-  color:#22c55e;
+  color:#2563eb;
   text-align:center;
 }
-footer {
+footer{
   text-align:center;
-  padding:20px;
-  background:#020617;
+  padding:30px;
+  background:#e2e8f0;
+  font-size:.9rem;
 }
 </style>
 </head>
+
 <body>
 
-<div class="hero">
-  <img src="cover.png" alt="eBook JavaScript">
-  <div class="text">
-    <h1>20 Exercices JavaScript Corrigés</h1>
-    <p>De zéro aux bases essentielles</p>
-    <a class="btn" href="https://wa.me/2126668556355?text=Bonjour%2C%20je%20souhaite%20acheter%20l'eBook%2020%20Exercices%20JavaScript%20Corrig%C3%A9s.">
-      Envoie-moi un message pour acheter
-    </a>
-  </div>
-</div>
+<header>
+  <img src="cover.png" alt="ebook">
+  <h1>20 Exercices JavaScript Corrigés</h1>
+  <p>De zéro aux bases essentielles</p>
+  <a class="btn" href="https://wa.me/212668556355?text=Bonjour%2C%20je%20souhaite%20acheter%20l'eBook%2020%20Exercices%20JavaScript%20Corrig%C3%A9s.">
+    Envoie-moi un message pour acheter
+  </a>
+</header>
 
 <section>
 <h2>Ce que tu vas apprendre</h2>
 <div class="cards">
-  <div class="card">Logique JavaScript</div>
-  <div class="card">Conditions & boucles</div>
+  <div class="card">Comprendre la logique JavaScript</div>
+  <div class="card">Variables, conditions, boucles</div>
   <div class="card">Tableaux & objets</div>
   <div class="card">DOM & événements</div>
 </div>
@@ -93,12 +90,17 @@ footer {
 
 <section>
 <h2>Pourquoi ce livre est différent</h2>
-<p>100% pratique, chaque exercice est expliqué, corrigé et commenté ligne par ligne.</p>
+<div class="cards">
+  <div class="card">100% pratique</div>
+  <div class="card">Zéro théorie inutile</div>
+  <div class="card">Corrigé et commenté</div>
+</div>
 </section>
 
 <section>
 <h2>Prix de lancement</h2>
 <p class="price">50 DH</p>
+<p style="text-align:center;">Paiement par virement, Cash Plus ou Inwi Money.</p>
 </section>
 
 <footer>
