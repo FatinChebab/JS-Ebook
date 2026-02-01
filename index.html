@@ -4,85 +4,128 @@
 <meta charset="UTF-8">
 <title>20 Exercices JavaScript Corrigés</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600;800&display=swap" rel="stylesheet">
+
 <style>
+*{box-sizing:border-box;}
 body{
   margin:0;
   font-family:Inter, sans-serif;
-  background:#f8fafc;
+  background:#f9fafb;
   color:#1e293b;
 }
-header{
-  background:linear-gradient(135deg,#2563eb,#facc15);
-  padding:70px 20px;
-  text-align:center;
-  color:white;
+
+/* HERO */
+.hero{
+  min-height:100vh;
+  display:flex;
+  flex-wrap:wrap;
 }
-header img{
-  max-width:220px;
-  border-radius:18px;
-  box-shadow:0 20px 40px rgba(0,0,0,.25);
+.hero-img{
+  flex:1;
+  background:#111827;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:40px;
 }
-header h1{margin:20px 0 10px;}
-header p{font-size:1.1rem;}
+.hero-img img{
+  max-width:320px;
+  border-radius:20px;
+  box-shadow:0 30px 60px rgba(0,0,0,.4);
+}
+.hero-content{
+  flex:1;
+  padding:80px 60px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+.hero-content h1{
+  font-size:3rem;
+  margin:0;
+}
+.hero-content p{
+  font-size:1.1rem;
+  margin:20px 0;
+  color:#475569;
+}
 .btn{
-  background:white;
-  color:#2563eb;
-  padding:14px 28px;
+  background:linear-gradient(135deg,#2563eb,#facc15);
+  color:white;
+  padding:16px 30px;
   border-radius:30px;
   text-decoration:none;
   font-weight:600;
   display:inline-block;
-  margin-top:20px;
+  width:fit-content;
 }
+
+/* SECTIONS */
 section{
-  max-width:900px;
+  max-width:1100px;
   margin:auto;
-  padding:60px 20px;
+  padding:80px 20px;
 }
-h2{text-align:center;margin-bottom:30px;}
+h2{text-align:center;margin-bottom:40px;}
 .cards{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-  gap:20px;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:25px;
 }
 .card{
   background:white;
-  border-radius:14px;
-  padding:25px;
-  box-shadow:0 10px 20px rgba(0,0,0,.05);
+  border-radius:16px;
+  padding:30px;
+  box-shadow:0 20px 40px rgba(0,0,0,.05);
   text-align:center;
+  transition:.3s;
 }
+.card:hover{transform:translateY(-5px);}
+
 .price{
-  font-size:2.5rem;
-  color:#2563eb;
   text-align:center;
+  font-size:3rem;
+  font-weight:800;
+  color:#2563eb;
 }
+
 footer{
   text-align:center;
   padding:30px;
-  background:#e2e8f0;
-  font-size:.9rem;
+  background:#e5e7eb;
+}
+
+/* MOBILE */
+@media(max-width:900px){
+.hero{flex-direction:column;}
+.hero-content{padding:50px 30px;text-align:center;}
 }
 </style>
 </head>
 
 <body>
 
-<header>
-  <img src="cover.png" alt="ebook">
-  <h1>20 Exercices JavaScript Corrigés</h1>
-  <p>De zéro aux bases essentielles</p>
-  <a class="btn" href="https://wa.me/212668556355?text=Bonjour%2C%20je%20souhaite%20acheter%20l'eBook%2020%20Exercices%20JavaScript%20Corrig%C3%A9s.">
-    Envoie-moi un message pour acheter
-  </a>
-</header>
+<div class="hero">
+  <div class="hero-img">
+    <img src="cover.png" alt="ebook">
+  </div>
+
+  <div class="hero-content">
+    <h1>20 Exercices JavaScript Corrigés</h1>
+    <p>De zéro aux bases essentielles</p>
+    <p>Un cahier 100% pratique pour enfin comprendre JavaScript en codant.</p>
+    <a class="btn" href="https://wa.me/2126668556355?text=Bonjour%2C%20je%20souhaite%20acheter%20l'eBook%2020%20Exercices%20JavaScript%20Corrig%C3%A9s.">
+      Envoie-moi un message pour acheter
+    </a>
+  </div>
+</div>
 
 <section>
 <h2>Ce que tu vas apprendre</h2>
 <div class="cards">
-  <div class="card">Comprendre la logique JavaScript</div>
-  <div class="card">Variables, conditions, boucles</div>
+  <div class="card">Logique JavaScript</div>
+  <div class="card">Conditions & boucles</div>
   <div class="card">Tableaux & objets</div>
   <div class="card">DOM & événements</div>
 </div>
@@ -92,15 +135,15 @@ footer{
 <h2>Pourquoi ce livre est différent</h2>
 <div class="cards">
   <div class="card">100% pratique</div>
-  <div class="card">Zéro théorie inutile</div>
   <div class="card">Corrigé et commenté</div>
+  <div class="card">Méthode testée</div>
 </div>
 </section>
 
 <section>
 <h2>Prix de lancement</h2>
 <p class="price">50 DH</p>
-<p style="text-align:center;">Paiement par virement, Cash Plus ou Inwi Money.</p>
+<p style="text-align:center;">Paiement via virement, Cash Plus ou Inwi Money.</p>
 </section>
 
 <footer>
